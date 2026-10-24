@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+<html class="w-full h-full overflow-hidden" lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>我的订单｜剧本杀与桌游预约</title>
+<script src="https://modao.cc/agent-py/static/source/js/tailwindcss.js"></script>
+<script src="https://modao.cc/agent-py/static/source/js/iconify-icon.min.js"></script>
+</head>
+<body class="w-full h-full m-0 overflow-hidden flex items-center justify-center bg-neutral-400 text-neutral-900 antialiased">
+<div class="w-full h-full max-w-[393px] max-h-[852px] bg-[#f6f6f3] flex flex-col overflow-hidden border border-neutral-500 shadow-2xl">
+<div class="flex-none h-7 px-4 flex items-center justify-between text-[11px] font-semibold tracking-tight">
+<span>9:41</span>
+<div class="flex items-center gap-1.5">
+<iconify-icon class="text-[12px]" icon="solar:signal-bold"></iconify-icon>
+<iconify-icon class="text-[12px]" icon="solar:wi-fi-bold"></iconify-icon>
+<iconify-icon class="text-[13px]" icon="solar:battery-full-bold"></iconify-icon>
+</div>
+</div>
+<header class="flex-none h-12 px-4 flex items-center justify-between border-b border-neutral-300 bg-[#f6f6f3]">
+<h1 class="text-[17px] font-black tracking-tight">我的订单</h1>
+<div class="flex items-center gap-2">
+<button aria-label="按日期筛选订单" class="w-8 h-8 flex items-center justify-center border border-neutral-300 bg-white" type="button">
+<iconify-icon class="text-[16px]" icon="solar:calendar-linear"></iconify-icon>
+</button>
+<div aria-label="小程序菜单占位" class="w-[62px] h-6 rounded-full border border-neutral-400 flex items-center justify-evenly bg-white/70">
+<iconify-icon class="text-[13px]" icon="solar:menu-dots-bold"></iconify-icon>
+<span class="w-px h-3 bg-neutral-300"></span>
+<span class="w-3 h-3 rounded-full border border-neutral-500 block"></span>
+</div>
+</div>
+</header>
+<main class="flex-1 min-h-0 overflow-y-auto overflow-x-hidden [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
+<div class="sticky top-0 z-10 bg-[#f6f6f3] border-b border-neutral-300 px-4 py-2">
+<div class="flex gap-2 overflow-x-auto [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
+<button class="order-tab shrink-0 h-7 px-3 border border-neutral-900 bg-neutral-900 text-white text-[10px] font-bold" data-filter="all" type="button">全部 4</button>
+<button class="order-tab shrink-0 h-7 px-3 border border-neutral-300 bg-white text-neutral-500 text-[10px]" data-filter="pending-payment" type="button">待付款 1</button>
+<button class="order-tab shrink-0 h-7 px-3 border border-neutral-300 bg-white text-neutral-500 text-[10px]" data-filter="upcoming" type="button">待开场 1</button>
+<button class="order-tab shrink-0 h-7 px-3 border border-neutral-300 bg-white text-neutral-500 text-[10px]" data-filter="pending-review" type="button">待评价 1</button>
+<button class="order-tab shrink-0 h-7 px-3 border border-neutral-300 bg-white text-neutral-500 text-[10px]" data-filter="completed" type="button">已完成 1</button>
+</div>
+</div>
+<div class="px-4 py-4">
+<div class="flex items-center justify-between border border-dashed border-neutral-400 px-3 py-2">
+<span class="text-[9px] text-neutral-500">近半年共 4 笔订单 · 累计到店 12 次</span>
+<span class="text-[9px] font-bold underline underline-offset-4">订单帮助</span>
+</div>
+<div class="mt-3 space-y-3">
+<article class="order-card border border-neutral-900 bg-white" data-status="pending-review">
+<div class="px-3 py-2 flex items-center justify-between border-b border-dashed border-neutral-300">
+<span class="text-[9px] text-neutral-500">订单号 202610180019</span>
+<span class="text-[10px] font-black">待评价</span>
+</div>
+<div class="p-3">
+<div class="flex gap-3">
+<div class="w-[58px] h-[74px] shrink-0 border border-dashed border-neutral-400 bg-neutral-100 flex flex-col items-center justify-center gap-1">
+<iconify-icon class="text-[18px] text-neutral-400" icon="solar:gallery-wide-linear"></iconify-icon>
+<span class="text-[8px] text-neutral-400">封面</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-start justify-between gap-2">
+<h2 class="text-[14px] font-black">雾都疑云</h2>
+<span class="text-[9px] border border-neutral-300 px-1 py-0.5 shrink-0">6人局</span>
+</div>
+<p class="mt-1 text-[9px] text-neutral-500">迷雾剧场 · 雾隐房</p>
+<p class="mt-1 text-[9px] text-neutral-500">10月18日 19:00 · 已结束</p>
+<p class="mt-1 text-[9px] text-neutral-500">座位 B3 · 1 人</p>
+</div>
+</div>
+<div class="mt-3 pt-2 border-t border-dashed border-neutral-300 flex items-center justify-between">
+<div>
+<p class="text-[8px] text-neutral-400">实付</p>
+<p class="mt-0.5 text-[14px] font-black">¥168</p>
+</div>
+<div class="flex gap-2">
+<button class="h-8 px-3 border border-neutral-300 text-[10px]" type="button">查看订单</button>
+<a class="h-8 px-3 bg-neutral-900 text-white text-[10px] font-bold flex items-center justify-center" href="review.html">去评价</a>
+</div>
+</div>
+</div>
+</article>
+<article class="order-card border border-neutral-300 bg-white" data-status="upcoming">
+<div class="px-3 py-2 flex items-center justify-between border-b border-dashed border-neutral-300">
+<span class="text-[9px] text-neutral-500">订单号 202610190032</span>
+<span class="text-[10px] font-black">待开场</span>
+</div>
+<div class="p-3">
+<div class="flex gap-3">
+<div class="w-[58px] h-[74px] shrink-0 border border-dashed border-neutral-400 bg-neutral-100 flex flex-col items-center justify-center gap-1">
+<iconify-icon class="text-[18px] text-neutral-400" icon="solar:gallery-wide-linear"></iconify-icon>
+<span class="text-[8px] text-neutral-400">封面</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-start justify-between gap-2">
+<h2 class="text-[14px] font-black">第七码头</h2>
+<span class="text-[9px] border border-neutral-300 px-1 py-0.5 shrink-0">7人局</span>
+</div>
+<p class="mt-1 text-[9px] text-neutral-500">折叠空间 · 暗室</p>
+<p class="mt-1 text-[9px] text-neutral-500">10月21日 20:00 · 约 5 小时</p>
+<p class="mt-1 text-[9px] text-neutral-500">拼场已满 · 发起人 周野</p>
+</div>
+</div>
+<div class="mt-3 border border-dashed border-neutral-300 px-2 py-1.5 flex items-center justify-between">
+<span class="text-[9px] text-neutral-500">距开场还有 1 天</span>
+<span class="text-[9px] font-bold">请提前 15 分钟到店</span>
+</div>
+<div class="mt-2 pt-2 border-t border-dashed border-neutral-300 flex items-center justify-between">
+<div>
+<p class="text-[8px] text-neutral-400">实付</p>
+<p class="mt-0.5 text-[14px] font-black">¥188</p>
+</div>
+<div class="flex gap-2">
+<button class="h-8 px-3 border border-neutral-300 text-[10px]" type="button">联系门店</button>
+<a class="h-8 px-3 bg-neutral-900 text-white text-[10px] font-bold flex items-center justify-center" href="lobby-detail.html">查看拼场</a>
+</div>
+</div>
+</div>
+</article>
+<article class="order-card border border-neutral-300 bg-white" data-status="pending-payment">
+<div class="px-3 py-2 flex items-center justify-between border-b border-dashed border-neutral-300">
+<span class="text-[9px] text-neutral-500">订单号 202610200008</span>
+<span class="text-[10px] font-black">待付款</span>
+</div>
+<div class="p-3">
+<div class="flex gap-3">
+<div class="w-[58px] h-[74px] shrink-0 border border-dashed border-neutral-400 bg-neutral-100 flex flex-col items-center justify-center gap-1">
+<iconify-icon class="text-[18px] text-neutral-400" icon="solar:gallery-wide-linear"></iconify-icon>
+<span class="text-[8px] text-neutral-400">封面</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-start justify-between gap-2">
+<h2 class="text-[14px] font-black">小院春秋</h2>
+<span class="text-[9px] border border-neutral-300 px-1 py-0.5 shrink-0">5人局</span>
+</div>
+<p class="mt-1 text-[9px] text-neutral-500">长夜剧场 · 春山房</p>
+<p class="mt-1 text-[9px] text-neutral-500">10月24日 14:00 · 约 3 小时</p>
+<p class="mt-1 text-[9px] text-neutral-500">座位 A3 · 1 人</p>
+</div>
+</div>
+<div class="mt-3 border border-neutral-900 bg-neutral-100 px-2 py-1.5 flex items-center justify-between">
+<span class="text-[9px] font-bold">请在 12:45 前完成支付</span>
+<span class="text-[9px]">剩余 14:32</span>
+</div>
+<div class="mt-2 pt-2 border-t border-dashed border-neutral-300 flex items-center justify-between">
+<div>
+<p class="text-[8px] text-neutral-400">应付</p>
+<p class="mt-0.5 text-[14px] font-black">¥128</p>
+</div>
+<div class="flex gap-2">
+<button class="h-8 px-3 border border-neutral-300 text-[10px]" type="button">取消订单</button>
+<button class="h-8 px-3 bg-neutral-900 text-white text-[10px] font-bold" type="button">去支付</button>
+</div>
+</div>
+</div>
+</article>
+<article class="order-card border border-neutral-300 bg-white" data-status="completed">
+<div class="px-3 py-2 flex items-center justify-between border-b border-dashed border-neutral-300">
+<span class="text-[9px] text-neutral-500">订单号 202610120061</span>
+<span class="text-[10px] font-black">已完成</span>
+</div>
+<div class="p-3">
+<div class="flex gap-3">
+<div class="w-[58px] h-[74px] shrink-0 border border-dashed border-neutral-400 bg-neutral-100 flex flex-col items-center justify-center gap-1">
+<iconify-icon class="text-[18px] text-neutral-400" icon="solar:gallery-wide-linear"></iconify-icon>
+<span class="text-[8px] text-neutral-400">封面</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-start justify-between gap-2">
+<h2 class="text-[14px] font-black">长夜将明</h2>
+<span class="text-[9px] border border-neutral-300 px-1 py-0.5 shrink-0">6人局</span>
+</div>
+<p class="mt-1 text-[9px] text-neutral-500">迷雾剧场 · 春山房</p>
+<p class="mt-1 text-[9px] text-neutral-500">10月12日 19:00 · 已结束</p>
+<p class="mt-1 text-[9px] text-neutral-500">已评价 · 5.0 分</p>
+</div>
+</div>
+<div class="mt-3 pt-2 border-t border-dashed border-neutral-300 flex items-center justify-between">
+<div>
+<p class="text-[8px] text-neutral-400">实付</p>
+<p class="mt-0.5 text-[14px] font-black">¥158</p>
+</div>
+<div class="flex gap-2">
+<button class="h-8 px-3 border border-neutral-300 text-[10px]" type="button">查看评价</button>
+<a class="h-8 px-3 bg-neutral-900 text-white text-[10px] font-bold flex items-center justify-center" href="stores.html">再次预约</a>
+</div>
+</div>
+</div>
+</article>
+</div>
+<div class="hidden mt-8 border border-dashed border-neutral-400 p-6 text-center" id="orders-empty">
+<iconify-icon class="text-[32px] text-neutral-400" icon="solar:clipboard-list-linear"></iconify-icon>
+<p class="mt-3 text-[12px] font-bold">暂无对应订单</p>
+<p class="mt-1 text-[10px] text-neutral-500">换个状态看看，或去首页挑选剧本。</p>
+</div>
+<p class="mt-5 pb-2 text-center text-[9px] text-neutral-400">订单状态与按钮为原型占位</p>
+</div>
+</main>
+<nav aria-label="底部导航" class="flex-none h-[62px] border-t border-neutral-900 bg-[#f6f6f3] grid grid-cols-4">
+<a class="flex flex-col items-center justify-center gap-1 text-neutral-400" href="home.html">
+<iconify-icon class="text-[20px]" icon="solar:home-smile-linear"></iconify-icon>
+<span class="text-[10px]">首页</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-neutral-400" href="lobby.html">
+<iconify-icon class="text-[20px]" icon="solar:users-group-rounded-linear"></iconify-icon>
+<span class="text-[10px]">拼场大厅</span>
+</a>
+<a aria-current="page" class="relative flex flex-col items-center justify-center gap-1 text-neutral-900" href="orders.html">
+<span class="absolute top-0 left-1/2 h-[2px] w-7 -translate-x-1/2 bg-neutral-900"></span>
+<iconify-icon class="text-[20px]" icon="solar:clipboard-list-bold"></iconify-icon>
+<span class="text-[10px] font-bold">订单</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-neutral-400" href="profile.html">
+<iconify-icon class="text-[20px]" icon="solar:user-circle-linear"></iconify-icon>
+<span class="text-[10px]">我的</span>
+</a>
+</nav>
+</div>
+<script>
+    const orderTabs = document.querySelectorAll('.order-tab');
+    const orderCards = document.querySelectorAll('.order-card');
+    const emptyState = document.getElementById('orders-empty');
+
+    orderTabs.forEach((tab) => {
+      tab.addEventListener('click', () => {
+        orderTabs.forEach((item) => {
+          item.classList.remove('bg-neutral-900', 'text-white', 'border-neutral-900');
+          item.classList.add('bg-white', 'text-neutral-500', 'border-neutral-300');
+        });
+        tab.classList.remove('bg-white', 'text-neutral-500', 'border-neutral-300');
+        tab.classList.add('bg-neutral-900', 'text-white', 'border-neutral-900');
+
+        const filter = tab.dataset.filter;
+        let visibleCount = 0;
+        orderCards.forEach((card) => {
+          if (filter === 'all' || card.dataset.status === filter) {
+            card.classList.remove('hidden');
+            visibleCount += 1;
+          } else {
+            card.classList.add('hidden');
+          }
+        });
+        if (visibleCount === 0) {
+          emptyState.classList.remove('hidden');
+        } else {
+          emptyState.classList.add('hidden');
+        }
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+
+<html class="w-full h-full overflow-hidden" lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>评价提交｜剧本杀与桌游预约</title>
+<script src="https://modao.cc/agent-py/static/source/js/tailwindcss.js"></script>
+<script src="https://modao.cc/agent-py/static/source/js/iconify-icon.min.js"></script>
+</head>
+<body class="w-full h-full m-0 overflow-hidden flex items-center justify-center bg-neutral-400 text-neutral-900 antialiased">
+<div class="w-full h-full max-w-[393px] max-h-[852px] bg-[#f6f6f3] flex flex-col overflow-hidden border border-neutral-500 shadow-2xl">
+<div class="flex-none h-7 px-4 flex items-center justify-between text-[11px] font-semibold tracking-tight">
+<span>9:41</span>
+<div class="flex items-center gap-1.5">
+<iconify-icon class="text-[12px]" icon="solar:signal-bold"></iconify-icon>
+<iconify-icon class="text-[12px]" icon="solar:wi-fi-bold"></iconify-icon>
+<iconify-icon class="text-[13px]" icon="solar:battery-full-bold"></iconify-icon>
+</div>
+</div>
+<header class="flex-none h-12 px-3 flex items-center gap-2 border-b border-neutral-300 bg-[#f6f6f3]">
+<a aria-label="返回我的订单" class="w-8 h-8 flex items-center justify-center border border-neutral-300 bg-white" href="orders.html">
+<iconify-icon class="text-[18px]" icon="solar:alt-arrow-left-linear"></iconify-icon>
+</a>
+<h1 class="flex-1 text-[14px] font-black">发表评价</h1>
+<button class="text-[10px] text-neutral-500 underline underline-offset-4" type="button">评价规则</button>
+<div aria-label="小程序菜单占位" class="w-[62px] h-6 rounded-full border border-neutral-400 flex items-center justify-evenly bg-white/70">
+<iconify-icon class="text-[13px]" icon="solar:menu-dots-bold"></iconify-icon>
+<span class="w-px h-3 bg-neutral-300"></span>
+<span class="w-3 h-3 rounded-full border border-neutral-500 block"></span>
+</div>
+</header>
+<main class="flex-1 min-h-0 overflow-y-auto overflow-x-hidden [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
+<div class="px-4 py-4">
+<div class="border border-neutral-300 bg-white p-3 flex items-center gap-3">
+<div class="w-[56px] h-[72px] shrink-0 border border-dashed border-neutral-400 bg-neutral-100 flex flex-col items-center justify-center gap-1">
+<iconify-icon class="text-[18px] text-neutral-400" icon="solar:gallery-wide-linear"></iconify-icon>
+<span class="text-[8px] text-neutral-400">封面</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between gap-2">
+<h2 class="text-[15px] font-black">雾都疑云</h2>
+<span class="text-[9px] border border-neutral-400 px-1 py-0.5">已完成</span>
+</div>
+<p class="mt-1 text-[9px] text-neutral-500">迷雾剧场 · 雾隐房</p>
+<p class="mt-1 text-[9px] text-neutral-500">10月18日 19:00 · 主持人 阿九</p>
+</div>
+</div>
+<section class="mt-4 border border-neutral-900 bg-white p-4">
+<div class="text-center">
+<h2 class="text-[15px] font-black">这次体验怎么样？</h2>
+<p class="mt-1 text-[9px] text-neutral-500">你的评价会帮助更多玩家选本</p>
+<div aria-label="总体评分" class="mt-3 flex items-center justify-center gap-2" role="group">
+<button aria-label="1星" class="star-btn w-9 h-9 flex items-center justify-center text-neutral-900" data-value="1" type="button">
+<iconify-icon class="text-[30px]" icon="solar:star-bold"></iconify-icon>
+</button>
+<button aria-label="2星" class="star-btn w-9 h-9 flex items-center justify-center text-neutral-900" data-value="2" type="button">
+<iconify-icon class="text-[30px]" icon="solar:star-bold"></iconify-icon>
+</button>
+<button aria-label="3星" class="star-btn w-9 h-9 flex items-center justify-center text-neutral-900" data-value="3" type="button">
+<iconify-icon class="text-[30px]" icon="solar:star-bold"></iconify-icon>
+</button>
+<button aria-label="4星" class="star-btn w-9 h-9 flex items-center justify-center text-neutral-900" data-value="4" type="button">
+<iconify-icon class="text-[30px]" icon="solar:star-bold"></iconify-icon>
+</button>
+<button aria-label="5星" class="star-btn w-9 h-9 flex items-center justify-center text-neutral-900" data-value="5" type="button">
+<iconify-icon class="text-[30px]" icon="solar:star-bold"></iconify-icon>
+</button>
+</div>
+<p class="mt-2 text-[11px] font-bold" id="rating-label">非常满意</p>
+</div>
+<div class="mt-4 pt-3 border-t border-dashed border-neutral-300 space-y-2">
+<div class="flex items-center justify-between">
+<span class="text-[10px] text-neutral-600">剧本内容</span>
+<div class="flex items-center gap-0.5">
+<iconify-icon class="text-[14px]" icon="solar:star-bold"></iconify-icon>
+<iconify-icon class="text-[14px]" icon="solar:star-bold"></iconify-icon>
+<iconify-icon class="text-[14px]" icon="solar:star-bold"></iconify-icon>
+<iconify-icon class="text-[14px]" icon="solar:star-bold"></iconify-icon>
+<iconify-icon class="text-[14px]" icon="solar:star-bold"></iconify-icon>
+</div>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-[10px] text-neutral-600">主持人控场</span>
+<div class="flex items-center gap-0.5">
+<iconify-icon class="text-[14px]" icon="solar:star-bold"></iconify-icon>
+<iconify-icon class="text-[14px]" icon="solar:star-bold"></iconify-icon>
+<iconify-icon class="text-[14px]" icon="solar:star-bold"></iconify-icon>
+<iconify-icon class="text-[14px]" icon="solar:star-bold"></iconify-icon>
+<iconify-icon class="text-[14px]" icon="solar:star-bold"></iconify-icon>
+</div>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-[10px] text-neutral-600">门店环境</span>
+<div class="flex items-center gap-0.5">
+<iconify-icon class="text-[14px]" icon="solar:star-bold"></iconify-icon>
+<iconify-icon class="text-[14px]" icon="solar:star-bold"></iconify-icon>
+<iconify-icon class="text-[14px]" icon="solar:star-bold"></iconify-icon>
+<iconify-icon class="text-[14px]" icon="solar:star-bold"></iconify-icon>
+<iconify-icon class="text-[14px] text-neutral-300" icon="solar:star-bold"></iconify-icon>
+</div>
+</div>
+</div>
+</section>
+<section class="mt-4 border border-neutral-300 bg-white p-3">
+<div class="flex items-center justify-between">
+<h2 class="text-[12px] font-black">选择评价标签</h2>
+<span class="text-[9px] text-neutral-500">可多选</span>
+</div>
+<div class="mt-3 flex flex-wrap gap-2">
+<button aria-pressed="false" class="review-tag h-7 px-2.5 border border-neutral-300 bg-white text-[10px]" type="button">剧情紧凑</button>
+<button aria-pressed="false" class="review-tag h-7 px-2.5 border border-neutral-300 bg-white text-[10px]" type="button">主持人专业</button>
+<button aria-pressed="false" class="review-tag h-7 px-2.5 border border-neutral-300 bg-white text-[10px]" type="button">环境舒适</button>
+<button aria-pressed="false" class="review-tag h-7 px-2.5 border border-neutral-300 bg-white text-[10px]" type="button">氛围拉满</button>
+<button aria-pressed="false" class="review-tag h-7 px-2.5 border border-neutral-300 bg-white text-[10px]" type="button">新手友好</button>
+<button aria-pressed="false" class="review-tag h-7 px-2.5 border border-neutral-300 bg-white text-[10px]" type="button">交通方便</button>
+<button aria-pressed="false" class="review-tag h-7 px-2.5 border border-neutral-300 bg-white text-[10px]" type="button">值得二刷</button>
+</div>
+</section>
+<section class="mt-4 border border-neutral-300 bg-white p-3">
+<div class="flex items-center justify-between">
+<h2 class="text-[12px] font-black">写下你的体验</h2>
+<span class="text-[9px] text-neutral-400">选填</span>
+</div>
+<div class="mt-2 border border-neutral-300 bg-[#fafaf8]">
+<textarea class="w-full bg-transparent p-2.5 text-[11px] leading-5 resize-none outline-none focus:ring-0" id="review-text" maxlength="300" placeholder="聊聊剧情、主持人或门店服务，给后面的玩家一些参考。" rows="4"></textarea>
+<div class="px-2.5 pb-2 flex items-center justify-between">
+<span class="text-[8px] text-neutral-400">请勿填写个人敏感信息</span>
+<span class="text-[8px] text-neutral-400"><span id="text-count">0</span> / 300</span>
+</div>
+</div>
+</section>
+<section class="mt-4 border border-neutral-300 bg-white p-3">
+<div class="flex items-center justify-between">
+<h2 class="text-[12px] font-black">上传现场照片</h2>
+<span class="text-[9px] text-neutral-500">最多 3 张</span>
+</div>
+<div class="mt-3 flex gap-2">
+<button aria-label="上传照片占位" class="w-[72px] h-[72px] border border-dashed border-neutral-400 bg-neutral-50 flex flex-col items-center justify-center gap-1" type="button">
+<iconify-icon class="text-[20px] text-neutral-400" icon="solar:camera-linear"></iconify-icon>
+<span class="text-[8px] text-neutral-400">添加照片</span>
+</button>
+<div class="w-[72px] h-[72px] border border-dashed border-neutral-300 bg-neutral-100 flex flex-col items-center justify-center gap-1 opacity-50">
+<iconify-icon class="text-[20px] text-neutral-400" icon="solar:gallery-linear"></iconify-icon>
+<span class="text-[8px] text-neutral-400">占位</span>
+</div>
+<div class="w-[72px] h-[72px] border border-dashed border-neutral-300 bg-neutral-100 flex flex-col items-center justify-center gap-1 opacity-50">
+<iconify-icon class="text-[20px] text-neutral-400" icon="solar:gallery-linear"></iconify-icon>
+<span class="text-[8px] text-neutral-400">占位</span>
+</div>
+</div>
+</section>
+<div class="mt-4 border border-neutral-300 bg-white px-3 py-3 flex items-center justify-between">
+<div>
+<p class="text-[10px] font-bold">匿名评价</p>
+<p class="mt-0.5 text-[8px] text-neutral-400">开启后不展示头像与昵称</p>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input class="sr-only peer" type="checkbox"/>
+<span class="w-9 h-5 border border-neutral-400 bg-neutral-200 peer-checked:bg-neutral-900 relative block">
+<span class="absolute top-0.5 left-0.5 w-3.5 h-3.5 bg-white border border-neutral-400 peer-checked:translate-x-4 transition-transform block"></span>
+</span>
+</label>
+</div>
+<div class="mt-4 border border-dashed border-neutral-400 p-3">
+<p class="text-[9px] leading-5 text-neutral-500">评价提交后将展示在剧本与门店详情页，平台会对违规内容进行审核。已发布的评价可在“我的评价”中查看。</p>
+</div>
+<div class="h-2"></div>
+</div>
+</main>
+<div class="flex-none border-t border-neutral-300 bg-[#f6f6f3] px-3 py-3 flex items-center gap-2">
+<button class="w-[78px] h-10 border border-neutral-400 bg-white text-[10px]" type="button">存草稿</button>
+<a class="flex-1 h-10 bg-neutral-900 text-white text-[12px] font-bold flex items-center justify-center" href="orders.html">提交评价</a>
+</div>
+<nav aria-label="底部导航" class="flex-none h-[62px] border-t border-neutral-900 bg-[#f6f6f3] grid grid-cols-4">
+<a class="flex flex-col items-center justify-center gap-1 text-neutral-400" href="home.html">
+<iconify-icon class="text-[20px]" icon="solar:home-smile-linear"></iconify-icon>
+<span class="text-[10px]">首页</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-neutral-400" href="lobby.html">
+<iconify-icon class="text-[20px]" icon="solar:users-group-rounded-linear"></iconify-icon>
+<span class="text-[10px]">拼场大厅</span>
+</a>
+<a aria-current="page" class="relative flex flex-col items-center justify-center gap-1 text-neutral-900" href="orders.html">
+<span class="absolute top-0 left-1/2 h-[2px] w-7 -translate-x-1/2 bg-neutral-900"></span>
+<iconify-icon class="text-[20px]" icon="solar:clipboard-list-bold"></iconify-icon>
+<span class="text-[10px] font-bold">订单</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-neutral-400" href="profile.html">
+<iconify-icon class="text-[20px]" icon="solar:user-circle-linear"></iconify-icon>
+<span class="text-[10px]">我的</span>
+</a>
+</nav>
+</div>
+<script>
+    const stars = document.querySelectorAll('.star-btn');
+    const ratingLabel = document.getElementById('rating-label');
+    const ratingLabels = ['很不满意', '不太满意', '一般', '满意', '非常满意'];
+
+    stars.forEach((star, index) => {
+      star.addEventListener('click', () => {
+        stars.forEach((item, itemIndex) => {
+          if (itemIndex <= index) {
+            item.classList.remove('text-neutral-300');
+            item.classList.add('text-neutral-900');
+          } else {
+            item.classList.remove('text-neutral-900');
+            item.classList.add('text-neutral-300');
+          }
+        });
+        ratingLabel.textContent = ratingLabels[index];
+      });
+    });
+
+    const reviewTags = document.querySelectorAll('.review-tag');
+    reviewTags.forEach((tag) => {
+      tag.addEventListener('click', () => {
+        const isActive = tag.getAttribute('aria-pressed') === 'true';
+        tag.setAttribute('aria-pressed', String(!isActive));
+        if (isActive) {
+          tag.classList.remove('bg-neutral-900', 'text-white', 'border-neutral-900');
+          tag.classList.add('bg-white', 'text-neutral-700', 'border-neutral-300');
+        } else {
+          tag.classList.remove('bg-white', 'text-neutral-700', 'border-neutral-300');
+          tag.classList.add('bg-neutral-900', 'text-white', 'border-neutral-900');
+        }
+      });
+    });
+
+    const reviewText = document.getElementById('review-text');
+    const textCount = document.getElementById('text-count');
+    reviewText.addEventListener('input', () => {
+      textCount.textContent = reviewText.value.length;
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+
+<html class="w-full h-full overflow-hidden" lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>门店列表｜剧本杀与桌游预约</title>
+<script src="https://modao.cc/agent-py/static/source/js/tailwindcss.js"></script>
+<script src="https://modao.cc/agent-py/static/source/js/iconify-icon.min.js"></script>
+</head>
+<body class="w-full h-full m-0 overflow-hidden flex items-center justify-center bg-neutral-400 text-neutral-900 antialiased">
+<div class="w-full h-full max-w-[393px] max-h-[852px] bg-[#f6f6f3] flex flex-col overflow-hidden border border-neutral-500 shadow-2xl">
+<div class="flex-none h-7 px-4 flex items-center justify-between text-[11px] font-semibold tracking-tight">
+<span>9:41</span>
+<div class="flex items-center gap-1.5">
+<iconify-icon class="text-[12px]" icon="solar:signal-bold"></iconify-icon>
+<iconify-icon class="text-[12px]" icon="solar:wi-fi-bold"></iconify-icon>
+<iconify-icon class="text-[13px]" icon="solar:battery-full-bold"></iconify-icon>
+</div>
+</div>
+<header class="flex-none h-12 px-3 flex items-center gap-2 border-b border-neutral-300 bg-[#f6f6f3]">
+<a aria-label="返回剧本详情" class="w-8 h-8 flex items-center justify-center border border-neutral-300 bg-white" href="script-detail.html">
+<iconify-icon class="text-[18px]" icon="solar:alt-arrow-left-linear"></iconify-icon>
+</a>
+<h1 class="flex-1 text-[14px] font-black">选择门店</h1>
+<button aria-label="地图模式占位" class="w-8 h-8 flex items-center justify-center" type="button">
+<iconify-icon class="text-[17px]" icon="solar:map-linear"></iconify-icon>
+</button>
+<div aria-label="小程序菜单占位" class="w-[62px] h-6 rounded-full border border-neutral-400 flex items-center justify-evenly bg-white/70">
+<iconify-icon class="text-[13px]" icon="solar:menu-dots-bold"></iconify-icon>
+<span class="w-px h-3 bg-neutral-300"></span>
+<span class="w-3 h-3 rounded-full border border-neutral-500 block"></span>
+</div>
+</header>
+<main class="flex-1 min-h-0 overflow-y-auto overflow-x-hidden [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
+<div class="px-4 py-4">
+<div class="border border-neutral-300 bg-white p-3">
+<div class="flex items-center gap-2">
+<button class="flex items-center gap-1 text-[11px] font-bold shrink-0" type="button">
+<iconify-icon class="text-[15px]" icon="solar:map-point-linear"></iconify-icon>
+              朝阳区
+              <iconify-icon class="text-[11px] text-neutral-500" icon="solar:alt-arrow-down-linear"></iconify-icon>
+</button>
+<div class="flex-1 h-8 border border-neutral-300 flex items-center gap-2 px-2.5">
+<iconify-icon class="text-[14px] text-neutral-400" icon="solar:magnifer-linear"></iconify-icon>
+<span class="text-[10px] text-neutral-400">搜索门店名称或商圈</span>
+</div>
+</div>
+<div class="mt-3 flex gap-2 overflow-x-auto [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
+<button class="store-filter shrink-0 h-7 px-2.5 border border-neutral-900 bg-neutral-900 text-white text-[10px] font-bold" type="button">距离最近</button>
+<button class="store-filter shrink-0 h-7 px-2.5 border border-neutral-300 bg-white text-[10px]" type="button">价格从低到高</button>
+<button class="store-filter shrink-0 h-7 px-2.5 border border-neutral-300 bg-white text-[10px]" type="button">今日有位</button>
+<button class="store-filter shrink-0 h-7 px-2.5 border border-neutral-300 bg-white text-[10px]" type="button">可拼场</button>
+</div>
+</div>
+<div class="mt-3 h-20 border border-dashed border-neutral-400 bg-neutral-100 flex items-center justify-center gap-2">
+<iconify-icon class="text-[24px] text-neutral-400" icon="solar:map-point-wave-linear"></iconify-icon>
+<div>
+<p class="text-[10px] font-bold text-neutral-500">地图占位</p>
+<p class="mt-0.5 text-[9px] text-neutral-400">后续接入地图与门店定位</p>
+</div>
+</div>
+<div class="mt-4 flex items-center justify-between">
+<h2 class="text-[13px] font-black">附近 3 家合作门店</h2>
+<span class="text-[10px] text-neutral-500">《雾都疑云》可预约</span>
+</div>
+<div class="mt-3 space-y-3">
+<a aria-label="查看迷雾剧场朝阳大悦城店" class="block border border-neutral-900 bg-white" href="store-detail.html">
+<div class="p-3">
+<div class="flex gap-3">
+<div class="w-[82px] h-[82px] shrink-0 border border-dashed border-neutral-400 bg-neutral-100 flex flex-col items-center justify-center gap-1">
+<iconify-icon class="text-[22px] text-neutral-400" icon="solar:shop-linear"></iconify-icon>
+<span class="text-[9px] text-neutral-400">门店图占位</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-start justify-between gap-2">
+<div>
+<h3 class="text-[14px] font-black leading-tight">迷雾剧场 · 朝阳大悦城店</h3>
+<p class="mt-1 text-[9px] text-neutral-500">朝阳北路 101 号 8 层</p>
+</div>
+<span class="shrink-0 border border-neutral-900 px-1.5 py-0.5 text-[9px] font-bold">1.2km</span>
+</div>
+<div class="mt-2 flex flex-wrap gap-1">
+<span class="border border-neutral-300 px-1.5 py-0.5 text-[8px]">5 个主题房</span>
+<span class="border border-neutral-300 px-1.5 py-0.5 text-[8px]">营业至 02:00</span>
+<span class="border border-neutral-300 px-1.5 py-0.5 text-[8px]">可停车</span>
+</div>
+<div class="mt-2 flex items-end justify-between">
+<span class="text-[13px] font-black">¥128 <span class="text-[9px] font-normal text-neutral-500">起 / 人</span></span>
+<span class="text-[9px] text-neutral-500">4.9 分 · 1.3k 评价</span>
+</div>
+</div>
+</div>
+<div class="mt-3 pt-2 border-t border-dashed border-neutral-300 flex items-center justify-between">
+<div class="flex items-center gap-1.5 text-[9px] text-neutral-500">
+<span class="w-1.5 h-1.5 rounded-full bg-neutral-900"></span>
+                  今日 4 个场次可预约
+                </div>
+<span class="text-[10px] font-bold underline underline-offset-4">查看门店与房间</span>
+</div>
+</div>
+</a>
+<a aria-label="查看折叠空间三里屯店" class="block border border-neutral-300 bg-white" href="store-detail.html">
+<div class="p-3">
+<div class="flex gap-3">
+<div class="w-[82px] h-[82px] shrink-0 border border-dashed border-neutral-400 bg-neutral-100 flex flex-col items-center justify-center gap-1">
+<iconify-icon class="text-[22px] text-neutral-400" icon="solar:shop-linear"></iconify-icon>
+<span class="text-[9px] text-neutral-400">门店图占位</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-start justify-between gap-2">
+<div>
+<h3 class="text-[14px] font-black leading-tight">折叠空间 · 三里屯店</h3>
+<p class="mt-1 text-[9px] text-neutral-500">工体北路 8 号 2 层</p>
+</div>
+<span class="shrink-0 border border-neutral-400 px-1.5 py-0.5 text-[9px] font-bold">2.6km</span>
+</div>
+<div class="mt-2 flex flex-wrap gap-1">
+<span class="border border-neutral-300 px-1.5 py-0.5 text-[8px]">剧本杀 + 桌游</span>
+<span class="border border-neutral-300 px-1.5 py-0.5 text-[8px]">营业至 01:00</span>
+</div>
+<div class="mt-2 flex items-end justify-between">
+<span class="text-[13px] font-black">¥98 <span class="text-[9px] font-normal text-neutral-500">起 / 人</span></span>
+<span class="text-[9px] text-neutral-500">4.7 分 · 860 评价</span>
+</div>
+</div>
+</div>
+<div class="mt-3 pt-2 border-t border-dashed border-neutral-300 flex items-center justify-between">
+<div class="flex items-center gap-1.5 text-[9px] text-neutral-500">
+<span class="w-1.5 h-1.5 rounded-full bg-neutral-500"></span>
+                  今日 2 个拼场可加入
+                </div>
+<span class="text-[10px] font-bold underline underline-offset-4">查看门店与房间</span>
+</div>
+</div>
+</a>
+<a aria-label="查看长夜剧场国贸店" class="block border border-neutral-300 bg-white" href="store-detail.html">
+<div class="p-3">
+<div class="flex gap-3">
+<div class="w-[82px] h-[82px] shrink-0 border border-dashed border-neutral-400 bg-neutral-100 flex flex-col items-center justify-center gap-1">
+<iconify-icon class="text-[22px] text-neutral-400" icon="solar:shop-linear"></iconify-icon>
+<span class="text-[9px] text-neutral-400">门店图占位</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-start justify-between gap-2">
+<div>
+<h3 class="text-[14px] font-black leading-tight">长夜剧场 · 国贸店</h3>
+<p class="mt-1 text-[9px] text-neutral-500">建国路 88 号 SOHO 3 层</p>
+</div>
+<span class="shrink-0 border border-neutral-400 px-1.5 py-0.5 text-[9px] font-bold">3.8km</span>
+</div>
+<div class="mt-2 flex flex-wrap gap-1">
+<span class="border border-neutral-300 px-1.5 py-0.5 text-[8px]">6 个主题房</span>
+<span class="border border-neutral-300 px-1.5 py-0.5 text-[8px]">沉浸式演绎</span>
+</div>
+<div class="mt-2 flex items-end justify-between">
+<span class="text-[13px] font-black">¥158 <span class="text-[9px] font-normal text-neutral-500">起 / 人</span></span>
+<span class="text-[9px] text-neutral-500">4.8 分 · 920 评价</span>
+</div>
+</div>
+</div>
+<div class="mt-3 pt-2 border-t border-dashed border-neutral-300 flex items-center justify-between">
+<div class="flex items-center gap-1.5 text-[9px] text-neutral-500">
+<span class="w-1.5 h-1.5 rounded-full bg-neutral-500"></span>
+                  今日 3 个场次可预约
+                </div>
+<span class="text-[10px] font-bold underline underline-offset-4">查看门店与房间</span>
+</div>
+</div>
+</a>
+</div>
+<div class="mt-5 border border-dashed border-neutral-400 p-4 text-center">
+<p class="text-[11px] font-bold">想换一个商圈？</p>
+<p class="mt-1 text-[10px] text-neutral-500">后续可接入城市、商圈与距离筛选。</p>
+</div>
+<p class="mt-5 pb-2 text-center text-[9px] text-neutral-400">门店排序与地图为框架占位</p>
+</div>
+</main>
+<nav aria-label="底部导航" class="flex-none h-[62px] border-t border-neutral-900 bg-[#f6f6f3] grid grid-cols-4">
+<a aria-current="page" class="relative flex flex-col items-center justify-center gap-1 text-neutral-900" href="home.html">
+<span class="absolute top-0 left-1/2 h-[2px] w-7 -translate-x-1/2 bg-neutral-900"></span>
+<iconify-icon class="text-[20px]" icon="solar:home-smile-bold"></iconify-icon>
+<span class="text-[10px] font-bold">首页</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-neutral-400" href="lobby.html">
+<iconify-icon class="text-[20px]" icon="solar:users-group-rounded-linear"></iconify-icon>
+<span class="text-[10px]">拼场大厅</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-neutral-400" href="orders.html">
+<iconify-icon class="text-[20px]" icon="solar:clipboard-list-linear"></iconify-icon>
+<span class="text-[10px]">订单</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-neutral-400" href="profile.html">
+<iconify-icon class="text-[20px]" icon="solar:user-circle-linear"></iconify-icon>
+<span class="text-[10px]">我的</span>
+</a>
+</nav>
+</div>
+<script>
+    const storeFilters = document.querySelectorAll('.store-filter');
+    storeFilters.forEach((button) => {
+      button.addEventListener('click', () => {
+        storeFilters.forEach((item) => {
+          item.classList.remove('bg-neutral-900', 'text-white', 'border-neutral-900');
+          item.classList.add('bg-white', 'border-neutral-300');
+        });
+        button.classList.remove('bg-white', 'border-neutral-300');
+        button.classList.add('bg-neutral-900', 'text-white', 'border-neutral-900');
+      });
+    });
+  </script>
+</body>
+</html>
